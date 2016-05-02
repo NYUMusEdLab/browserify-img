@@ -1,0 +1,36 @@
+{
+  "name": "browserify-img",
+  "version": "1.0.0",
+  "author": "NYU MusEDlab",
+  "description": "Docker image initializer for bundling modules",
+  "dependencies": {},
+  "scripts": {
+    "gulp": "gulp",
+    "dev": "gulp dev",
+    "prod": "gulp prod",
+    "clean": "gulp clean"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "browserify": "^13.0.0",
+    "del": "^1.2.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-env": "^0.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "partialify": "^3.1.6",
+    "require-dir": "^0.3.0",
+    "serve-favicon": "^2.3.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "private": true
+}
