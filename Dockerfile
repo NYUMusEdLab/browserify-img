@@ -2,7 +2,9 @@ FROM mhart/alpine-node:5.12
 MAINTAINER tech@musedlab.org
 
 VOLUME /drone
-RUN apk add --no-cache zip python make g++ git openssh
+RUN apk add --no-cache zip python make g++ git openssh curl
+RUN npm cache clean
+RUN npm install npm -g
 RUN mkdir -p /srv
 RUN mkdir -p /srv/builddir
 COPY ./package.json ./npm-shrinkwrap.json /srv/builddir/
