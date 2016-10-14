@@ -10,6 +10,8 @@ RUN cd $(npm root -g)/npm \
   && npm install fs-extra \
   && sed -i -e s/graceful-fs/fs-extra/ -e s/fs\.rename/fs.move/ ./lib/utils/rename.js
 RUN npm install npm -g
+RUN mkdir -p ~/.ssh
+RUN ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 RUN mkdir -p /srv
 RUN mkdir -p /srv/builddir
 COPY ./package.json ./npm-shrinkwrap.json /srv/builddir/
